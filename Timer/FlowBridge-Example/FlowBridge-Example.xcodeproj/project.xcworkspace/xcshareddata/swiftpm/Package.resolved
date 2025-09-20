@@ -1,0 +1,15 @@
+{
+  "originHash" : "8a6d295d5d512b35b807f4e4810992c646783ef59dfedc1b859bf92239134584",
+  "pins" : [
+    {
+      "identity" : "flowbridge",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/danrom11/FlowBridge.git",
+      "state" : {
+        "revision" : "40deabfabcf24d615bbbc1a6dbe49800beacadb5",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}
