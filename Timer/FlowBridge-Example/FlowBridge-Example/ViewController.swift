@@ -19,8 +19,8 @@ class ViewController: UIViewController {
     
     @objc func test(_ data: Any?) {
         print("Data: \(data ?? "none")")
-        
-        // Приводим к строке и обновляем UI на главном потоке
+
+        // Cast the string and update the UI on the main thread
         if let stringData = data as? String {
             DispatchQueue.main.async {
                 self.nameLabel.text = stringData
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         FlowBridge.connect(FlowSignals.tick_score, target: self, slot: #selector(test(_:)))
         
         let manager = ManagerWrapper.shared
-        manager().start(withInterval: 1000) // запустит Timer на 1 секунду
+        manager().start(withInterval: 1000) // starts the Timer for 1 second
     }
 
 

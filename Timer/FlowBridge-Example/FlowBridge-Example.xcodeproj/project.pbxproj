@@ -17,8 +17,8 @@
 		681C9E242E7CA31100D762C7 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 681C9E222E7CA31100D762C7 /* Timer.cpp */; };
 		681C9E2E2E7EE79D00D762C7 /* FlowBridge in Frameworks */ = {isa = PBXBuildFile; productRef = 681C9E2D2E7EE79D00D762C7 /* FlowBridge */; };
 		681C9E302E7EE79D00D762C7 /* FlowCore in Frameworks */ = {isa = PBXBuildFile; productRef = 681C9E2F2E7EE79D00D762C7 /* FlowCore */; };
-		6885BD742E7EFDF800381261 /* FlowBridge in Frameworks */ = {isa = PBXBuildFile; productRef = 6885BD732E7EFDF800381261 /* FlowBridge */; };
-		6885BD762E7EFDF800381261 /* FlowCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6885BD752E7EFDF800381261 /* FlowCore */; };
+		6893B5792E7F070C002B168C /* FlowBridge in Frameworks */ = {isa = PBXBuildFile; productRef = 6893B5782E7F070C002B168C /* FlowBridge */; };
+		6893B57B2E7F070C002B168C /* FlowCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6893B57A2E7F070C002B168C /* FlowCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +43,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				681C9E2E2E7EE79D00D762C7 /* FlowBridge in Frameworks */,
-				6885BD762E7EFDF800381261 /* FlowCore in Frameworks */,
-				6885BD742E7EFDF800381261 /* FlowBridge in Frameworks */,
+				6893B57B2E7F070C002B168C /* FlowCore in Frameworks */,
+				6893B5792E7F070C002B168C /* FlowBridge in Frameworks */,
 				681C9E302E7EE79D00D762C7 /* FlowCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,8 +106,8 @@
 			packageProductDependencies = (
 				681C9E2D2E7EE79D00D762C7 /* FlowBridge */,
 				681C9E2F2E7EE79D00D762C7 /* FlowCore */,
-				6885BD732E7EFDF800381261 /* FlowBridge */,
-				6885BD752E7EFDF800381261 /* FlowCore */,
+				6893B5782E7F070C002B168C /* FlowBridge */,
+				6893B57A2E7F070C002B168C /* FlowCore */,
 			);
 			productName = "FlowBridge-Example";
 			productReference = 681C9E082E7CA1A400D762C7 /* FlowBridge-Example.app */;
@@ -139,7 +139,7 @@
 			);
 			mainGroup = 681C9DFF2E7CA1A400D762C7;
 			packageReferences = (
-				6885BD722E7EFDF700381261 /* XCRemoteSwiftPackageReference "FlowBridge" */,
+				6893B5772E7F070C002B168C /* XCRemoteSwiftPackageReference "FlowBridge" */,
 			);
 			productRefGroup = 681C9E092E7CA1A400D762C7 /* Products */;
 			projectDirPath = "";
@@ -402,12 +402,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6885BD722E7EFDF700381261 /* XCRemoteSwiftPackageReference "FlowBridge" */ = {
+		6893B5772E7F070C002B168C /* XCRemoteSwiftPackageReference "FlowBridge" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danrom11/FlowBridge.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -421,14 +421,14 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = FlowCore;
 		};
-		6885BD732E7EFDF800381261 /* FlowBridge */ = {
+		6893B5782E7F070C002B168C /* FlowBridge */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6885BD722E7EFDF700381261 /* XCRemoteSwiftPackageReference "FlowBridge" */;
+			package = 6893B5772E7F070C002B168C /* XCRemoteSwiftPackageReference "FlowBridge" */;
 			productName = FlowBridge;
 		};
-		6885BD752E7EFDF800381261 /* FlowCore */ = {
+		6893B57A2E7F070C002B168C /* FlowCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6885BD722E7EFDF700381261 /* XCRemoteSwiftPackageReference "FlowBridge" */;
+			package = 6893B5772E7F070C002B168C /* XCRemoteSwiftPackageReference "FlowBridge" */;
 			productName = FlowCore;
 		};
 /* End XCSwiftPackageProductDependency section */
