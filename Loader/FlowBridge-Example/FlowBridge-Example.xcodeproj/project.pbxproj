@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		681C9E0C2E7CA1A400D762C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C9E0B2E7CA1A400D762C7 /* AppDelegate.swift */; };
+		681C9E0E2E7CA1A400D762C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C9E0D2E7CA1A400D762C7 /* SceneDelegate.swift */; };
+		681C9E102E7CA1A400D762C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C9E0F2E7CA1A400D762C7 /* ViewController.swift */; };
+		681C9E132E7CA1A400D762C7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 681C9E122E7CA1A400D762C7 /* Base */; };
+		681C9E152E7CA1A600D762C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681C9E142E7CA1A600D762C7 /* Assets.xcassets */; };
+		681C9E182E7CA1A600D762C7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 681C9E172E7CA1A600D762C7 /* Base */; };
+		681C9E212E7CA1F700D762C7 /* ManagerWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 681C9E202E7CA1F700D762C7 /* ManagerWrapper.mm */; };
+		681C9E2E2E7EE79D00D762C7 /* FlowBridge in Frameworks */ = {isa = PBXBuildFile; productRef = 681C9E2D2E7EE79D00D762C7 /* FlowBridge */; };
+		681C9E302E7EE79D00D762C7 /* FlowCore in Frameworks */ = {isa = PBXBuildFile; productRef = 681C9E2F2E7EE79D00D762C7 /* FlowCore */; };
+		6893B5792E7F070C002B168C /* FlowBridge in Frameworks */ = {isa = PBXBuildFile; productRef = 6893B5782E7F070C002B168C /* FlowBridge */; };
+		6893B57B2E7F070C002B168C /* FlowCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6893B57A2E7F070C002B168C /* FlowCore */; };
+		68D81E862E7F1B8D00B48714 /* Loader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68D81E842E7F1B8D00B48714 /* Loader.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		681C9E082E7CA1A400D762C7 /* FlowBridge-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlowBridge-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		681C9E0B2E7CA1A400D762C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		681C9E0D2E7CA1A400D762C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		681C9E0F2E7CA1A400D762C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		681C9E122E7CA1A400D762C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		681C9E142E7CA1A600D762C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		681C9E172E7CA1A600D762C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		681C9E192E7CA1A600D762C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		681C9E1F2E7CA1F600D762C7 /* FlowBridge-Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlowBridge-Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		681C9E202E7CA1F700D762C7 /* ManagerWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ManagerWrapper.mm; sourceTree = "<group>"; };
+		681C9E252E7CA61900D762C7 /* ManagerWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerWrapper.h; sourceTree = "<group>"; };
+		68D81E842E7F1B8D00B48714 /* Loader.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Loader.mm; sourceTree = "<group>"; };
+		68D81E852E7F1B8D00B48714 /* Loader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Loader.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		681C9E052E7CA1A400D762C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681C9E2E2E7EE79D00D762C7 /* FlowBridge in Frameworks */,
+				6893B57B2E7F070C002B168C /* FlowCore in Frameworks */,
+				6893B5792E7F070C002B168C /* FlowBridge in Frameworks */,
+				681C9E302E7EE79D00D762C7 /* FlowCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		681C9DFF2E7CA1A400D762C7 = {
+			isa = PBXGroup;
+			children = (
+				681C9E0A2E7CA1A400D762C7 /* FlowBridge-Example */,
+				681C9E092E7CA1A400D762C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		681C9E092E7CA1A400D762C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				681C9E082E7CA1A400D762C7 /* FlowBridge-Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		681C9E0A2E7CA1A400D762C7 /* FlowBridge-Example */ = {
+			isa = PBXGroup;
+			children = (
+				681C9E0B2E7CA1A400D762C7 /* AppDelegate.swift */,
+				681C9E0D2E7CA1A400D762C7 /* SceneDelegate.swift */,
+				681C9E0F2E7CA1A400D762C7 /* ViewController.swift */,
+				681C9E112E7CA1A400D762C7 /* Main.storyboard */,
+				681C9E142E7CA1A600D762C7 /* Assets.xcassets */,
+				681C9E162E7CA1A600D762C7 /* LaunchScreen.storyboard */,
+				681C9E192E7CA1A600D762C7 /* Info.plist */,
+				681C9E202E7CA1F700D762C7 /* ManagerWrapper.mm */,
+				681C9E252E7CA61900D762C7 /* ManagerWrapper.h */,
+				681C9E1F2E7CA1F600D762C7 /* FlowBridge-Example-Bridging-Header.h */,
+				68D81E842E7F1B8D00B48714 /* Loader.mm */,
+				68D81E852E7F1B8D00B48714 /* Loader.hpp */,
+			);
+			path = "FlowBridge-Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		681C9E072E7CA1A400D762C7 /* FlowBridge-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 681C9E1C2E7CA1A600D762C7 /* Build configuration list for PBXNativeTarget "FlowBridge-Example" */;
+			buildPhases = (
+				681C9E042E7CA1A400D762C7 /* Sources */,
+				681C9E052E7CA1A400D762C7 /* Frameworks */,
+				681C9E062E7CA1A400D762C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlowBridge-Example";
+			packageProductDependencies = (
+				681C9E2D2E7EE79D00D762C7 /* FlowBridge */,
+				681C9E2F2E7EE79D00D762C7 /* FlowCore */,
+				6893B5782E7F070C002B168C /* FlowBridge */,
+				6893B57A2E7F070C002B168C /* FlowCore */,
+			);
+			productName = "FlowBridge-Example";
+			productReference = 681C9E082E7CA1A400D762C7 /* FlowBridge-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		681C9E002E7CA1A400D762C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					681C9E072E7CA1A400D762C7 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+				};
+			};
+			buildConfigurationList = 681C9E032E7CA1A400D762C7 /* Build configuration list for PBXProject "FlowBridge-Example" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 681C9DFF2E7CA1A400D762C7;
+			packageReferences = (
+				6893B5772E7F070C002B168C /* XCRemoteSwiftPackageReference "FlowBridge" */,
+			);
+			productRefGroup = 681C9E092E7CA1A400D762C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				681C9E072E7CA1A400D762C7 /* FlowBridge-Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		681C9E062E7CA1A400D762C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681C9E152E7CA1A600D762C7 /* Assets.xcassets in Resources */,
+				681C9E182E7CA1A600D762C7 /* Base in Resources */,
+				681C9E132E7CA1A400D762C7 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		681C9E042E7CA1A400D762C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681C9E102E7CA1A400D762C7 /* ViewController.swift in Sources */,
+				68D81E862E7F1B8D00B48714 /* Loader.mm in Sources */,
+				681C9E0C2E7CA1A400D762C7 /* AppDelegate.swift in Sources */,
+				681C9E0E2E7CA1A400D762C7 /* SceneDelegate.swift in Sources */,
+				681C9E212E7CA1F700D762C7 /* ManagerWrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		681C9E112E7CA1A400D762C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				681C9E122E7CA1A400D762C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		681C9E162E7CA1A600D762C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				681C9E172E7CA1A600D762C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		681C9E1A2E7CA1A600D762C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		681C9E1B2E7CA1A600D762C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		681C9E1D2E7CA1A600D762C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7XXBMR66Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FlowBridge-Example/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.FlowBridge-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FlowBridge-Example/FlowBridge-Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		681C9E1E2E7CA1A600D762C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7XXBMR66Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FlowBridge-Example/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.FlowBridge-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FlowBridge-Example/FlowBridge-Example-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		681C9E032E7CA1A400D762C7 /* Build configuration list for PBXProject "FlowBridge-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681C9E1A2E7CA1A600D762C7 /* Debug */,
+				681C9E1B2E7CA1A600D762C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		681C9E1C2E7CA1A600D762C7 /* Build configuration list for PBXNativeTarget "FlowBridge-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681C9E1D2E7CA1A600D762C7 /* Debug */,
+				681C9E1E2E7CA1A600D762C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6893B5772E7F070C002B168C /* XCRemoteSwiftPackageReference "FlowBridge" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danrom11/FlowBridge.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		681C9E2D2E7EE79D00D762C7 /* FlowBridge */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FlowBridge;
+		};
+		681C9E2F2E7EE79D00D762C7 /* FlowCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FlowCore;
+		};
+		6893B5782E7F070C002B168C /* FlowBridge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6893B5772E7F070C002B168C /* XCRemoteSwiftPackageReference "FlowBridge" */;
+			productName = FlowBridge;
+		};
+		6893B57A2E7F070C002B168C /* FlowCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6893B5772E7F070C002B168C /* XCRemoteSwiftPackageReference "FlowBridge" */;
+			productName = FlowCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 681C9E002E7CA1A400D762C7 /* Project object */;
+}
